@@ -1,0 +1,42 @@
+header
+{
+    padding-left: 3vw; 
+    padding-top:7.5px;
+    padding-bottom: 7.5px; 
+    width: 100vw; 
+    height: 40px; 
+    background: rgba(255, 255, 255, 0.25); 
+    color:black; 
+    position: fixed; 
+    z-index: 3;
+    font-family: 'intro';
+    font-size:18px; 
+    word-spacing:1vw; 
+    box-shadow: 0 0 1vw rgba(0,0,0,0.25), 0 0 1vw rgba(0,0,0,0.22);
+}
+* 
+{ 
+    margin:0; 
+    padding: 0;
+} 
+body
+{
+    background: black;
+}
+@font-face
+{
+    font-family: 'intro';
+    src: url('D:\WebServer\OSPanel\domains\nurmukhamedov\fonts\intro.otf');
+    font-family: 'open sans';
+    src: url('D:\WebServer\OSPanel\domains\nurmukhamedov\fonts\OpenSans-Regular.otf');
+}
+main
+{
+    display: flex;
+    height: 100vh;
+    width: 1500px;
+    background: aqua;
+    position: absolute;
+    left: 210px;
+    top: 95px;
+}
