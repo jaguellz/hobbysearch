@@ -96,6 +96,7 @@ footer
 }
 .sel{
     background-image: url(fon.jpg); 
+    overflow: hidden; 
     background: rgb(218, 218, 0);
     font-size: 65px;
     margin-bottom: 15px;
@@ -107,7 +108,4 @@ footer
 }
 .selects:hover{
     box-shadow: 0 0 1px rgb(0, 0, 0);
-}
-select:active{
-    width: 10px;
 }
