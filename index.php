@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div id="main-title">хочу учиться!</div>
+        <a id="main-title" href=''>хочу учиться!</a>
             <div class="main-url">
             <div>главная контакты о нас</div>
         </div>
@@ -45,8 +45,12 @@
             найти учителя или школу.</div>
         <div id="whiteinfo">
             контакты:<br>
-            +7(999)654-14-13<br>
-            +7(969)238-56-99
+            <a href='https://vk.com/qzynoc'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/768px-VK.com-logo.svg.png" width="32px" height="32px"></a>
+            <a href="https://www.instagram.com/qzynoc/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" width="32px" height="32px"></a>
+            +7(999)647-04-27 <br>
+            <a href='https://vk.com/id242226084'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/768px-VK.com-logo.svg.png" width="32px" height="32px"></a>
+            <a href="https://www.instagram.com/noth.ink"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" width="32px" height="32px"></a>        
+            +7 <br>
         </div> 
     </div>
     </main>

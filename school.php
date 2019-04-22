@@ -33,9 +33,9 @@ while($row = $result->fetch_assoc()) {
        <?=$name?>
     </div>
     <div class="pic">
-    <img src="<?=$img?>">
+    <img src="<?=$img?>" style='width:200px; height:200px;'>
     </div>
-    <div class="newsbox">
+    <div class="newsbox">12423542512512
     <?$sql='SELECT news,title FROM `news` WHERE id_school='.$_GET['id'];
         $result=$mysqli->query($sql);
         while($row = $result->fetch_assoc()) {

@@ -16,7 +16,9 @@ header
     word-spacing:1vw;
     z-index:5;
 }
-
+a{
+    text-decoration: none;
+}
 .main-url
 {
     float:right;
@@ -32,6 +34,7 @@ header
     display: inline-block;
     width:250px;
     padding-top:7.5px;
+    text-decoration: 0;
 }
 main
 {
@@ -54,12 +57,15 @@ padding-left: 580px;
 font-size:20px;
 font-style:"Open Sans";
 }
-.news
+.newsbox
 {
-float:right;
-height:86.9vh;
-width: 500px;
-background: grey;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    float:right;
+    height:86.9vh;
+    width: 500px;
+    background: grey;
 }
 .about
 {
