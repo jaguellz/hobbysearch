@@ -20,7 +20,7 @@
            
         <!-----<img src="back.jpg" style="height:400px; width:100%; float:left; z-index:4; padding-bottom:5px">--->
     <form  method='get' class="choice" action='search.php'> 
-        <div id="town">Выберите город: <select name="town" class='sel'>
+        <div id="town" class='selects'>Выберите город: <select name="town" class='sel'>
             <?
             $result=$mysqli->query("SELECT id,name from town");
             while($row = $result->fetch_assoc()) {
@@ -29,7 +29,7 @@
             ?>
             </select>
         </div>
-        <div id="hobby">Выберите хобби: <select class='sel' name='hobby'>
+        <div id="hobby" class='selects'>Выберите хобби: <select class='sel' name='hobby'>
             <?
             $result=$mysqli->query("SELECT id,name from hobby");
             while($row = $result->fetch_assoc()) {

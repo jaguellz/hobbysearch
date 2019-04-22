@@ -39,7 +39,7 @@ main
 {   
     padding:0;
     padding-top: 50px;
-    background-image: url(fon.jpg); 
+    background-image: url(https://vk.com/doc223652366_499933553?hash=03221b87d8da5fefb8&dl=bd26e4a75bfcfd94c3); 
     font-style:"Intro";
     width:100vw;
 }
@@ -86,7 +86,7 @@ select{
     flex-direction: column;
 }
 #filters{
-    background-image: url(fon.jpg); 
+    background-image: url(https://vk.com/doc223652366_499933553?hash=03221b87d8da5fefb8&dl=bd26e4a75bfcfd94c3); 
     text-align: center;
     font-family: 'intro';
 }
