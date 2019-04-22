@@ -17,8 +17,6 @@
         </div>
     </header>
     <main>
-           
-        <!-----<img src="back.jpg" style="height:400px; width:100%; float:left; z-index:4; padding-bottom:5px">--->
     <form  method='get' class="choice" action='search.php'> 
         <div id="town" class='selects'>Выберите город: <select name="town" class='sel'>
             <?
@@ -38,7 +36,7 @@
             ?>
             </select>
         </div>
-        <input type="submit" value="Искать">
+        <input type="submit" value="Искать" class='button'>
     </form>
     <div class="info">
         <div id="blackinfo">
@@ -50,12 +48,10 @@
             +7(999)654-14-13<br>
             +7(969)238-56-99
         </div> 
-
-        </div>
+    </div>
     </main>
     <footer>
         VREREFEFEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEF
-
     </footer>
 </body>
 </html>
