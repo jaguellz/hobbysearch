@@ -61,5 +61,8 @@ while($row = $result->fetch_assoc()) {
         <strong>партнёры:</strong>
     </div>
 </main>
+<footer>
+    123123
+</footer>
 </body>
 </html>
