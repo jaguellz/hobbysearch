@@ -11,7 +11,6 @@ while($row = $result->fetch_assoc()) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +23,7 @@ while($row = $result->fetch_assoc()) {
 </head>
 <body>
     <header>
-        <div id="main-title">хочу учиться!</div>
+        <a id="main-title" href=''>хочу учиться!</a>
             <div class="main-url">
             <div>главная контакты о нас</div>
         </div>
@@ -33,7 +32,8 @@ while($row = $result->fetch_assoc()) {
     <div class="title">
        <?=$name?>
     </div>
-    <div class="pic" style='background-image:url(<?=$img?>)'>
+    <div class="pic">
+    <img src="<?=$img?>">
     </div>
     <div class="newsbox">
     <?$sql='SELECT news,title FROM `news` WHERE id_school='.$_GET['id'];
@@ -44,7 +44,7 @@ while($row = $result->fetch_assoc()) {
                 <h1><?=$row['title']?></h1>
                 <?=$row['news']?>
             </div>
-        <?}}?>
+        <?}?>
     </div>
     <div class="location">
         <?=$place?>
