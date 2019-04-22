@@ -17,7 +17,7 @@ while($row = $result->fetch_assoc()) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>wanttostudy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="pain.css"/>
+    <link rel="stylesheet" href="search.css"/>
     <script src="style.js"></script>
 </head>
 <body>

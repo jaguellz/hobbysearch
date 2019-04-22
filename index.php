@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <title>Хочу учиться</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="index.css"/>
     <script src="style.js"></script>
 </head>
 <body>
