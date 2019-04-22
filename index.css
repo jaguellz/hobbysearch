@@ -108,3 +108,6 @@ footer
 .selects:hover{
     box-shadow: 0 0 1px rgb(0, 0, 0);
 }
+select:active{
+    width: 10px;
+}
