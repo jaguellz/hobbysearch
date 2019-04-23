@@ -87,6 +87,7 @@ select{
     background-image: url(fon.jpg); 
     text-align: center;
     font-family: 'intro';
+    padding-bottom: 5px;
 }
 footer{
     width: 100%; 
