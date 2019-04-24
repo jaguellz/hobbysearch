@@ -125,11 +125,12 @@ a:active{
 .topmenu{
     display: flex;
     flex-direction: row;
+    padding-top: 7.5px;
+    margin-left: 100px;
 }
 .topmenu li:hover .submenu {
     visibility: visible;
     opacity: 1;
     color: black;
     background: white;
-    box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.08), 0 1vw 1vw rgba(0, 0, 0, 0.05);
 }

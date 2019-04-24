@@ -24,19 +24,15 @@ while($row = $result->fetch_assoc()) {
     <title>wanttostudy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="search.css"/>
-    <script src="style.js"></script>
 </head>
 <body>
     <header>
         <div>
             <a id="main-title" href=''>хочу учиться!</a>
-            <div class="main-url">
-                <div>главная контакты о нас</div>
-            </div>
-            <ul style="float:right;" class='topmenu'>
-            <li>
+            <ul style="float:left; padding-top:7.5px;" class='topmenu'>
+            <li style='padding-bottom:18.87px'>
                 <div>Фильтры:</div>
-                <form method="get" class='submenu'>
+                <form method="get" class='submenu' style='text-align:center; padding-bottom:5px; background: rgba(0, 0, 0, 0);'>
                     <select name="town" class='sel'>
                     <?
                     $result=$mysqli->query("SELECT id,name from town");
@@ -57,6 +53,9 @@ while($row = $result->fetch_assoc()) {
                 </form>
             </li>
             </ul>
+            <div class="main-url">
+                <div>главная контакты о нас</div>
+            </div>
         </div> 
         
     </header>
