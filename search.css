@@ -109,3 +109,27 @@ a:active{
 .a{
     margin-bottom:100px;
 }
+.submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+.topmenu{
+    display: flex;
+    flex-direction: row;
+}
+.topmenu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    color: black;
+    background: white;
+    box-shadow: 0 1vw 1vw rgba(0, 0, 0, 0.08), 0 1vw 1vw rgba(0, 0, 0, 0.05);
+}

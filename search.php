@@ -33,28 +33,32 @@ while($row = $result->fetch_assoc()) {
             <div class="main-url">
                 <div>главная контакты о нас</div>
             </div>
-        </div>
-        <div id=filters>
-            <form method="get">
-            <select name="town" class='sel'>
-            <?
-            $result=$mysqli->query("SELECT id,name from town");
-            while($row = $result->fetch_assoc()) {
-                echo "<option value=".$row['id'].">".$row['name']."</option>";
-            }
-            ?>
-            </select>
-            <select class='sel' name='hobby'>
-            <?
-            $result=$mysqli->query("SELECT id,name from hobby");
-            while($row = $result->fetch_assoc()) {
-                echo "<option value=".$row['id'].">".$row['name']."</option>";
-            }
-            ?>
-            </select>
-            <input type="submit" value="поиск">
-            </form>
-        </div>
+            <ul style="float:right;" class='topmenu'>
+            <li>
+                <div>Фильтры:</div>
+                <form method="get" class='submenu'>
+                    <select name="town" class='sel'>
+                    <?
+                    $result=$mysqli->query("SELECT id,name from town");
+                    while($row = $result->fetch_assoc()) {
+                        echo "<option value=".$row['id'].">".$row['name']."</option>";
+                    }
+                    ?>
+                    </select>
+                    <select class='sel' name='hobby'>
+                    <?
+                    $result=$mysqli->query("SELECT id,name from hobby");
+                    while($row = $result->fetch_assoc()) {
+                        echo "<option value=".$row['id'].">".$row['name']."</option>";
+                    }
+                    ?>
+                    </select>
+                    <input type="submit" value="поиск">
+                </form>
+            </li>
+            </ul>
+        </div> 
+        
     </header>
     <main>
         <div id=all>
