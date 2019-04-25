@@ -1,0 +1,142 @@
+* 
+{ 
+    margin:0; 
+    padding: 0;
+    list-style-type: none;
+} 
+header
+{
+    width: 100vw; 
+    height: 50px; 
+    background:white;
+    color:black; 
+    position: fixed; 
+    font-family: 'intro';
+    font-size:20px; 
+    z-index:5;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.089), 0 5px 10px rgba(0, 0, 0, 0.075);
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.main-url
+{
+    float:right;
+    padding-right:50px;
+    padding-top:7.5px;
+    display: flex;
+    flex-direction: row;
+}
+#main-title{
+    float: left;
+    background-color:black;
+    color:white;
+    padding-left:40px;
+    height: 42.5px; 
+    top:0px;
+    width:250px;
+    padding-top:7.5px;
+}
+main
+{   
+    padding:0;
+    padding-top: 74px;
+    background-image: url(fon.jpg); 
+    font-style:"Intro";
+    width:auto;
+}
+select{
+    font-family: 'open sans';
+    size: 100px;
+    background: black;
+    color: white;
+    border: 0;
+}
+.school
+{
+
+    width: auto;
+    font-family:"Roboto";
+    background:#C5CBFF;
+    height:140px;
+    border: 0.2vw solid black;
+    font-size:46px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    word-spacing: 10px;
+}
+.about{
+    float: left;
+    padding-top: 40px;
+}
+.pic
+{ 
+    padding-left:50px;
+    padding-right: 20px;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.descr{
+    margin-right:100px;
+}
+#all{
+    display: flex;
+    padding-top:10px;
+    flex-direction: column;
+}
+#filters{
+    background-image: url(fon.jpg); 
+    text-align: center;
+    font-family: 'intro';
+    padding-bottom: 5px;
+}
+footer{
+    width: 100%; 
+    height: 300px;
+    background:rgb(182, 182, 182);
+    color:black; 
+    font-family: 'intro';
+    font-size:20px; 
+    word-spacing:1vw;
+    z-index: 1000;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:active{
+    color:black;
+}
+.a{
+    margin-bottom:100px;
+}
+.submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+.topmenu{
+    display: flex;
+    flex-direction: row;
+}
+.topmenu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    color: black;
+    background: white;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color:black;
+}

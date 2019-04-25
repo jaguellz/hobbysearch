@@ -2,7 +2,8 @@
 {
     padding:0;
     margin:0; 
-    
+    text-decoration: none;
+    list-style-type: none;
 }
 header
 {
@@ -13,15 +14,20 @@ header
     position: fixed; 
     font-family: 'intro';
     font-size:20px; 
-    word-spacing:1vw;
     z-index:5;
+    padding-right: 10px;
 }
-
+a{
+    text-decoration: none;
+    color:black;
+}
 .main-url
 {
     float:right;
     padding-right:50px;
     padding-top:7.5px;
+    display: flex;
+    flex-direction: row;
 }
 #main-title{
     float: left;
@@ -32,39 +38,47 @@ header
     display: inline-block;
     width:250px;
     padding-top:7.5px;
+    text-decoration: 0;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color:black;
 }
 main
 {
     background-image: url(fon.jpg);
-    width:100vw;
-    height:100vh ;
+    width:auto;
+    height:120vh;
 }
 .title
 {
 font-weight:600;
 padding-top: 80px;
 padding-left: 50px;
-font-size:30px;
+font-size:40px;
 font-style:"Open Sans";
 }
 .location
 {
 padding-top: 10px;
-padding-left: 580px;
+padding-left: 280px;
 font-size:20px;
 font-style:"Open Sans";
 }
-.news
-{
-float:right;
-height:86.9vh;
-width: 500px;
-background: grey;
+footer{
+    width: 100%; 
+    height: 300px;
+    background:rgb(182, 182, 182);
+    color:black; 
+    font-family: 'intro';
+    font-size:20px; 
+    word-spacing:1vw;
 }
 .about
 {
     padding-left: 50px;
-    padding-top:300px;
+    padding-top:200px;
     font-size:30px;
     font-style:"Open Sans";
 }
@@ -77,6 +91,29 @@ background: grey;
     left: 50px;
     border: 3px dashed #312a22;
     
+}
+.submenu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+.topmenu{
+    display: flex;
+    flex-direction: row;
+}
+.topmenu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    color: black;
+    background: white;
 }
 .contacts
 {   
@@ -94,3 +131,4 @@ background: grey;
     padding-top:20px; 
     font-style:"Open Sans";
 }
+title

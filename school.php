@@ -1,5 +1,6 @@
 <?php
 require_once("connect.php");
+require_once('head.php');
 $sql="SELECT name,img,place,description,contacts FROM school WHERE id=".$_GET['id'];
 $result=$mysqli->query($sql);
 while($row = $result->fetch_assoc()) {
@@ -11,7 +12,6 @@ while($row = $result->fetch_assoc()) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,46 +20,36 @@ while($row = $result->fetch_assoc()) {
             <title>wanttostudy</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="school.css"/>
+        <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/613/613307.svg">
     <script src="style.js"></script>
 </head>
 <body>
     <header>
-        <div id="main-title">хочу учиться!</div>
-            <div class="main-url">
-            <div>главная контакты о нас</div>
-        </div>
+        <a id="main-title" href='index.php'>хочу учиться!</a>
+        <?=$head?>
     </header>
 <main>
     <div class="title">
        <?=$name?>
     </div>
-    <div class="pic" style='background-image:url(<?=$img?>)'>
+    <div class="pic">
+    <img src="<?=$img?>" style='width:200px; height:200px;'>
     </div>
-    <div class="newsbox">
-    <?$sql='SELECT news,title FROM `news` WHERE id_school='.$_GET['id'];
-        $result=$mysqli->query($sql);
-        while($row = $result->fetch_assoc()) {
-            ?>
-            <div class='news'>
-                <h1><?=$row['title']?></h1>
-                <?=$row['news']?>
-            </div>
-        <?}}?>
-    </div>
+    
     <div class="location">
         <?=$place?>
     </div>
     <div class="about">
-        <strong>O заведении:</strong><br>
+        <strong style='font-size: 40px;'>O заведении:</strong><br>
         <?=$descr?>
     </div>
     <div class="contacts">
-        <strong>контакты:</strong> <br>
+        <strong >Контакты:</strong> <br>
         <?=$contacts?>
     </div>
-    <div class="partners">
-        <strong>партнёры:</strong>
-    </div>
 </main>
+<footer>
+    footer
+</footer>
 </body>
 </html>
