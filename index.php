@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <?require_once("connect.php");
-    require_once('head.php');?>
+    <?require_once("support/connect.php");
+    require_once('support/head.php');?>
     <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Хочу учиться</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-        <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/613/613307.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <?=$head?>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <a id="main-title" href='index.php'>хочу учиться!</a>
-        <?=$head?>
+        <?=$header?>
     </header>
     <main>
     <form  method='get' class="choice" action='search.php'> 
@@ -53,8 +51,8 @@
         </div> 
     </div>
     </main>
-    <footer>
-        <?=$footer?>
-    </footer>
+    <!--<footer>
+        <?//=$footer?>
+    </footer>-->
 </body>
 </html>

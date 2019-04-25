@@ -30,7 +30,6 @@ a{
     flex-direction: row;
 }
 #main-title{
-    float: left;
     background-color:rgb(0, 0, 0);
     color:white;
     padding-left:40px;

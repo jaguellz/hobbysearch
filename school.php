@@ -1,6 +1,6 @@
 <?php
-require_once("connect.php");
-require_once('head.php');
+require_once("support/connect.php");
+require_once('support/head.php');
 $sql="SELECT name,img,place,description,contacts FROM school WHERE id=".$_GET['id'];
 $result=$mysqli->query($sql);
 while($row = $result->fetch_assoc()) {
@@ -16,17 +16,13 @@ while($row = $result->fetch_assoc()) {
 <html>
 <head>
     <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>wanttostudy</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="school.css"/>
-        <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/613/613307.svg">
-    <script src="style.js"></script>
+    <link rel="stylesheet" href="school.css"/>
+    <?=$head?>
 </head>
 <body>
     <header>
         <a id="main-title" href='index.php'>хочу учиться!</a>
-        <?=$head?>
+        <?=$header?>
     </header>
 <main>
     <div class="title">

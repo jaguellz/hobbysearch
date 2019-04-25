@@ -1,7 +1,7 @@
 <?php
 $width='100px';
-require_once("connect.php");
-require_once('head.php');
+require_once("support/connect.php");
+require_once('support/head.php');
 $hobby=$_GET['hobby'];
 $town=$_GET['town'];
 $sql='SELECT id_school FROM `connect` WHERE id_hobby='.$hobby;
@@ -22,10 +22,8 @@ while($row = $result->fetch_assoc()) {
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>wanttostudy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="search.css"/>
-    <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/613/613307.svg">
+    <?=$head?>
 </head>
 <body>
     <header>
@@ -55,7 +53,7 @@ while($row = $result->fetch_assoc()) {
                 </form>
             </li>
             </ul>
-            <?=$head?>
+            <?=$header?>
         </div> 
         
     </header>
