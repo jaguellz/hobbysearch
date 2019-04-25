@@ -80,7 +80,7 @@ while($row = $result->fetch_assoc()) {
         </div>
     </main>
     <footer>
-        12312321421423423
+        <?=$footer?>
     </footer>
 </body>
 </html>

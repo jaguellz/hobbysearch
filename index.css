@@ -13,7 +13,7 @@ a:hover, a:visited, a:link, a:active
 header
 {
     width: 100%; 
-    height: 50px; 
+    height: auto; 
     background:white;
     color:black; 
     position: fixed; 

@@ -49,7 +49,7 @@ while($row = $result->fetch_assoc()) {
     </div>
 </main>
 <footer>
-    footer
+    <?=$footer?>
 </footer>
 </body>
 </html>
