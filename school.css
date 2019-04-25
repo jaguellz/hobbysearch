@@ -47,15 +47,9 @@ a:hover, a:visited, a:link, a:active
 }
 main
 {
-<<<<<<< HEAD
     background-image: url(fon.jpg);
     width:auto;
     height:120vh;
-=======
-    background-image: url(https://vk.com/doc223652366_499933553?hash=03221b87d8da5fefb8&dl=bd26e4a75bfcfd94c3);
-    width:100vw;
-    height:100vh ;
->>>>>>> 3928be4a937fcd9c9a814f2be7753dae980f50f6
 }
 .title
 {

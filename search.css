@@ -41,13 +41,8 @@ header
 main
 {   
     padding:0;
-<<<<<<< HEAD:search.css
     padding-top: 74px;
     background-image: url(fon.jpg); 
-=======
-    padding-top: 50px;
-    background-image: url(https://vk.com/doc223652366_499933553?hash=03221b87d8da5fefb8&dl=bd26e4a75bfcfd94c3); 
->>>>>>> 3928be4a937fcd9c9a814f2be7753dae980f50f6:search.css
     font-style:"Intro";
     width:auto;
 }
