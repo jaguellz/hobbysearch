@@ -43,8 +43,12 @@ header
 }
 main
 {   
+<<<<<<< HEAD:index.css
 
     background-image: url(fon.jpg);
+=======
+    background-image: url(https://vk.com/doc223652366_499933553?hash=03221b87d8da5fefb8&dl=bd26e4a75bfcfd94c3);
+>>>>>>> 3928be4a937fcd9c9a814f2be7753dae980f50f6:index.css
     background-size: cover;
     margin:0; 
     height:auto;
@@ -57,12 +61,16 @@ main
     padding-bottom: 20px;
     font-size: 65px;
     font-family:"Clear Sans";
-    background-image: url(fon.jpg);
+    background-image: url(https://vk.com/doc223652366_499933553?hash=03221b87d8da5fefb8&dl=bd26e4a75bfcfd94c3);
     height: 300px;
 }
 #hobby
 {
+<<<<<<< HEAD:index.css
     margin-top:30px;
+=======
+    margin-top:50px;
+>>>>>>> 3928be4a937fcd9c9a814f2be7753dae980f50f6:index.css
 }
 .info
 {
@@ -104,8 +112,12 @@ footer
     
 }
 .sel{
+<<<<<<< HEAD:index.css
     background-image: url(fon.jpg); 
     overflow: hidden; 
+=======
+    background-image: url(https://vk.com/doc223652366_499933553?hash=03221b87d8da5fefb8&dl=bd26e4a75bfcfd94c3); 
+>>>>>>> 3928be4a937fcd9c9a814f2be7753dae980f50f6:index.css
     background: rgb(218, 218, 0);
     font-size: 65px;
     font-family: 'clear sans';
@@ -114,6 +126,7 @@ footer
     -moz-appearance: none;
     appearance: none;
 }
+<<<<<<< HEAD:index.css
 option{
     font-size: 25px;
 }
@@ -168,4 +181,8 @@ select:hover{
     opacity: 1;
     color: black;
     background: white;
+=======
+.selects:hover{
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+>>>>>>> 3928be4a937fcd9c9a814f2be7753dae980f50f6:index.css
 }
