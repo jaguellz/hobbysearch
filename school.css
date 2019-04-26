@@ -46,24 +46,24 @@ a:hover, a:visited, a:link, a:active
 }
 main
 {
-    background-image: url(fon.jpg);
+    background:white;
     width:auto;
     height:120vh;
 }
 .title
 {
-font-weight:600;
-padding-top: 80px;
-padding-left: 50px;
-font-size:40px;
-font-style:"Open Sans";
+    font-weight:600;
+    padding-top: 80px;
+    padding-left: 50px;
+    font-size:40px;
+    font-style:"Open Sans";
 }
 .location
 {
-padding-top: 10px;
-padding-left: 280px;
-font-size:20px;
-font-style:"Open Sans";
+    padding-top: 10px;
+    padding-left: 280px;
+    font-size:20px;
+    font-style:"Open Sans";
 }
 footer{
     width: 100%; 

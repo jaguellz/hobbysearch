@@ -43,7 +43,7 @@ main
 {   
     padding:0;
     padding-top: 74px;
-    background-image: url(fon.jpg); 
+    background:white;
     font-style:"Intro";
     width:auto;
 }
@@ -88,7 +88,7 @@ select{
     flex-direction: column;
 }
 #filters{
-    background-image: url(https://vk.com/doc223652366_499933553?hash=03221b87d8da5fefb8&dl=bd26e4a75bfcfd94c3); 
+    background:white;
     text-align: center;
     font-family: 'intro';
     padding-bottom: 5px;
