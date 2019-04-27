@@ -1,5 +1,4 @@
 <?php
-session_start();
 header('Content-type:text/html;charset=utf-8');
 function select($data){
     global $link;
@@ -18,8 +17,19 @@ function select($data){
 }
 function addschool($data,$hobby){
     global $link;
+    global $_GET;
     $sql= "INSERT INTO school (name,place,town,img,descriprion,contacts) VALUES (".$data['values'].")";
-    $link->query($sql)
+    $link->query($sql);
+    $sql="SELECT id FROM school WHERE name=\'".$_GET['school']."'";
+    $id=$link->query($sql);
+    foreach ($hobby as $key => $value) {
+        while ($row=$result->query($sql)) {
+            foreach ($hobby as $key => $value) {
+                $sql1= "INSERT INTO connect (id_school,id_hobby) VALUES (".$id.','.$value.")";
+                $link->query($sql1);
+            }
+        }
+    }
 }
 function insert($data){
     global $link;
@@ -53,8 +63,9 @@ $link = mysqli_connect('127.0.0.1','root','','project');
 mysqli_set_charset($link,"utf8");
 $query=$_GET['query'];
 $table=$_GET['table'];
-$hobby=$_GET['hobby'];
-$hobby= explode($hobby)
+foreach ($_GET['hobby'] as $key => $value) {
+    $hobby[]=$value;
+}
 if($_GET['where']){
     $where = $_GET['where'];
 }

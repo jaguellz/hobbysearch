@@ -38,7 +38,8 @@ while($row = $results[1]->fetch_assoc()) {
                 <tr><td>Город:</td><td><select name="town"><?=$options[1]?></select></td></tr>
                 <tr><td>Адрес:</td><td><input type="text" name=place></td></tr>
                 <tr><td>Чем занимается:</td><td><?=$options[0]?><td></tr>
-                <tr><td>Описание:</td><td><textarea name="descr" cols="30" rows="10"></textarea></td></tr>
+                <tr><td>Картинка(ссылкой):</td><td><input type="url" name="img"></td></tr>
+                <tr><td>Описание:</td><td><textarea name="description" cols="30" rows="10"></textarea></td></tr>
                 <tr><td>Контакты:</td><td><input type='text' name="contacts" value="+7"></td></tr>
                 <tr><td></td><td><input type="submit" value="Отправить"></td></tr>
             </table>    
@@ -48,9 +49,20 @@ while($row = $results[1]->fetch_assoc()) {
 </html>
 
 <?php
-$url="api/server.php?query=addschool&values=".$_POST['name'].',';
-
-
-
-echo $url;
+$con=mysqli_connect("localhost","root","","project");
+$sql="INSERT INTO school (name,place,town,img,description,contacts) VALUES ('".$_POST['name'].'\',\''.$_POST['place'].'\',\''.$_POST['town'].'\',\''.$_POST['img'].'\',\''.$_POST['description'].'\',\''.$_POST['contacts']."')";
+$con->query($sql);
+echo $sql.'<br>';
+$sql="SELECT `id` FROM school WHERE name='".$_POST['name']."'";
+$result=$con->query($sql);
+echo $sql.'<br>';
+while ($row=$result->fetch_assoc()) {
+    $id=$row['id'];
+}
+foreach ($_POST['hobby'] as $key => $value) {
+    $sql="INSERT INTO connect (id_school,id_hobby) VALUES (".$id.','.$value.")";
+    $con->query($sql);
+    echo $sql.'<br>';
+}
+mysqli_close($con);
 ?>
