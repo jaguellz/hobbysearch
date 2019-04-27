@@ -16,6 +16,11 @@ function select($data){
     }
     echo json_encode($result, JSON_UNESCAPED_UNICODE);
 }
+function addschool($data,$hobby){
+    global $link;
+    $sql= "INSERT INTO school (name,place,town,img,descriprion,contacts) VALUES (".$data['values'].")";
+    $link->query($sql)
+}
 function insert($data){
     global $link;
     $sql= "INSERT INTO ".$data['table'].'('.$data['fields'].') VALUES ('.$data['values'].')';
@@ -48,6 +53,8 @@ $link = mysqli_connect('127.0.0.1','root','','project');
 mysqli_set_charset($link,"utf8");
 $query=$_GET['query'];
 $table=$_GET['table'];
+$hobby=$_GET['hobby'];
+$hobby= explode($hobby)
 if($_GET['where']){
     $where = $_GET['where'];
 }
@@ -64,6 +71,7 @@ if($_GET['fields']){
 else {
     $fields='*';
 }
+
 $data = [
     'table' => $table,
     'fields' => $fields,
@@ -83,6 +91,9 @@ switch ($query) {
         break;
     case 'delete':
         delete($data);
+        break;
+    case 'addschool':
+        addschool($data,$hobby);
         break;
 }
 echo $sql;

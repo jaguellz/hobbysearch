@@ -31,11 +31,12 @@ while($row = $results[1]->fetch_assoc()) {
         <?=$header?>
     </header>
     <main>
-        <form action="" method='post'>
+        <h1 style='text-align:center'>Добавить Ваше учреждение</h1>
+        <form method='post' >
             <table>
                 <tr><td>Как называется:</td><td><input type="text" name='name'></td></tr>
-                <tr><td>город:</td><td><select name="town"><?=$options[1]?></select></td></tr>
-                <tr><td>адрес:</td><td><input type="text" name=place></td></tr>
+                <tr><td>Город:</td><td><select name="town"><?=$options[1]?></select></td></tr>
+                <tr><td>Адрес:</td><td><input type="text" name=place></td></tr>
                 <tr><td>Чем занимается:</td><td><?=$options[0]?><td></tr>
                 <tr><td>Описание:</td><td><textarea name="descr" cols="30" rows="10"></textarea></td></tr>
                 <tr><td>Контакты:</td><td><input type='text' name="contacts" value="+7"></td></tr>
@@ -45,3 +46,11 @@ while($row = $results[1]->fetch_assoc()) {
     </main>
 </body>
 </html>
+
+<?php
+$url="api/server.php?query=addschool&values=".$_POST['name'].',';
+
+
+
+echo $url;
+?>

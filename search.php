@@ -9,11 +9,11 @@ $result=$mysqli->query($sql);
 while($row = $result->fetch_assoc()) {
     $schoolsWhobby[]=$row['id_school'];
 }
-$sql='SELECT id,name,place,rating,img FROM `school` WHERE town='.$town;
+$sql='SELECT id,name,place,rating,img,moderated FROM `school` WHERE town='.$town;
 $result=$mysqli->query($sql);
 while($row = $result->fetch_assoc()) {
     foreach ($schoolsWhobby as $key => $value) {
-        if ($value==$row['id']) $schools[]=$value;   
+        if ($value==$row['id'] && $row['moderated']!=0) $schools[]=$value;   
     }
 };
 ?>
