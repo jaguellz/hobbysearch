@@ -7,7 +7,7 @@ $i=0;
 $options;
 mysqli_close($con);
 while($row = $results[0]->fetch_assoc()) {
-    $options[0]=$options[0].'<li><input type="checkbox" name="hobby[]" value='.$row['id'].'>'.$row['name'].'</li>';
+    $options[0]=$options[0].'<input type="checkbox" name="hobby[]" value='.$row['id'].'>'.$row['name'].' ';
 }
 
 while($row = $results[1]->fetch_assoc()) {
@@ -23,7 +23,7 @@ while($row = $results[1]->fetch_assoc()) {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?=$head?>
     <link rel="stylesheet" href="addschool.css">
-    <style>*{font-family: 'clear sans'; font-size:20px;}</style>
+    <style></style>
 </head>
 <body>
     <header>
@@ -32,14 +32,16 @@ while($row = $results[1]->fetch_assoc()) {
     </header>
     <main>
         <form action="" method='post'>
-            Как называется: <input type="text" name='name'> <br>
-            Где находится: город:<select name="town"><?=$options[1]?></select>
-            адрес:<input type="text" name=place> <br>
-            Чем занимается:<ul><?=$options[0]?></ul>
-            Описание: <textarea name="descr" cols="30" rows="10"></textarea> <br>
-            <input type="submit" value="отправить">
+            <table>
+                <tr><td>Как называется:</td><td><input type="text" name='name'></td></tr>
+                <tr><td>город:</td><td><select name="town"><?=$options[1]?></select></td></tr>
+                <tr><td>адрес:</td><td><input type="text" name=place></td></tr>
+                <tr><td>Чем занимается:</td><td><?=$options[0]?><td></tr>
+                <tr><td>Описание:</td><td><textarea name="descr" cols="30" rows="10"></textarea></td></tr>
+                <tr><td>Контакты:</td><td><input type='text' name="contacts" value="+7"></td></tr>
+                <tr><td></td><td><input type="submit" value="Отправить"></td></tr>
+            </table>    
         </form>
-        <?var_dump($_POST['hobby']); var_dump($_POST['1'])?>
     </main>
 </body>
 </html>
