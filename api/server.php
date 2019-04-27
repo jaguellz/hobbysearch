@@ -46,8 +46,8 @@ function delete($data){
 }
 $link = mysqli_connect('127.0.0.1','root','','project');
 mysqli_set_charset($link,"utf8");
-$query=$_SESSION['query'];
-$table=$_SESSION['table'];
+$query=$_GET['query'];
+$table=$_GET['table'];
 if($_GET['where']){
     $where = $_GET['where'];
 }
